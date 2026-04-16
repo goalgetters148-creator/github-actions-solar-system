@@ -39,7 +39,7 @@ jobs:
         name: docker job
         runs-on: ubuntu-latest
         env:
-          githubUsername: ${{github.actor}}
+          githubUsername: ${{github.repository_owner}}
           githubSHA: ${{github.sha}}
         steps:
           - name: checkout repo
